@@ -5,7 +5,7 @@ export default {
     // ---------- ROUTE: GET / ----------
     if (url.pathname === "/") {
       return new Response(
-        "Feedback Pulse is running.\n\nRoutes:\nGET /seed\nPOST /feedback\nGET /summary",
+        "Feedback Pulse is running.\n\nRoutes:\nGET /seed\nPOST /feedback\nGET /summary\nFirst, run the mock data (seed) with https://feedback-pulse.rbiglou.workers.dev/seed\nThen, Check the summary at https://feedback-pulse.rbiglou.workers.dev/summary",
         { headers: { "Content-Type": "text/plain" } }
       );
     }
